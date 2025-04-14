@@ -237,7 +237,7 @@ ul {
 }
 
 .product-card.featured {
-    min-width: 300px;
+    min-width: 250px;
     transform: scale(1.1);
     z-index: 2;
 }
@@ -251,7 +251,7 @@ ul {
 }
 
 .product-card.featured .product-image {
-    height: 350px;
+    height: 300px;
 }
 
 .product-details {
