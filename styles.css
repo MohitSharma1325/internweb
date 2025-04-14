@@ -141,6 +141,7 @@ ul {
 /* Category Section */
 .category-section {
     padding: 48px 32px;
+    height:auto;
 }
 
 .section-title {
@@ -216,7 +217,7 @@ ul {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    width: 100%;
+    width: 80%;
     scroll-padding: 0 50px;
 }
 
