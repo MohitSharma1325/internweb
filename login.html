@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - cocokind</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+    /* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f7f4ec;
+    color: #000;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #f7f4ec;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+    align-items: center;
+}
+
+.nav-link {
+    position: relative;
+    color: #000;
+}
+
+.heart-link {
+    color: #000;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-arrow {
+    font-size: 10px;
+    vertical-align: middle;
+}
+
+/* Login Form */
+.login-container {
+    max-width: 450px;
+    margin: 60px auto 120px;
+    padding: 0 20px;
+}
+
+.login-title {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.form-submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-submit {
+    background-color: #e56b54;
+    color: #fff;
+    border: 2px solid black;
+    padding: 12px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 150px;
+    text-align: center;
+    box-shadow: inset;
+}
+
+/* Footer */
+.footer {
+    background-color: #d0deec;
+    padding: 40px;
+    color: #000;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-heading {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    font-size: 14px;
+    color: #000;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    font-size: 18px;
+    color: #000;
+}
+
+.footer-logo {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .nav-links {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .login-container {
+        margin: 40px auto 80px;
+    }
+    
+    .login-title {
+        font-size: 36px;
+    }
+}
+</style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">cocokind</a>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="nav-link heart-link">❤️ lip ❤️</a>
+            <div class="dropdown">
+                <a href="#" class="nav-link">trending <span class="dropdown-arrow">˅</span></a>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="nav-link">shop all <span class="dropdown-arrow">˅</span></a>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="nav-link">best sellers <span class="dropdown-arrow">˅</span></a>
+            </div>
+            <a href="#" class="nav-link">save on sets</a>
+            <a href="#" class="nav-link">routine builder</a>
+            <a href="#" class="nav-link">rewards</a>
+        </div>
+        <div class="nav-icons">
+            
+        </div>
+    </nav>
+
+    <!-- Login Form -->
+    <div class="login-container">
+        <h1 class="login-title">login</h1>
+
+        <form class="login-form">
+            <div class="form-group">
+                <label for="email">email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-submit">
+                <button type="submit" class="btn-submit">submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3 class="footer-heading">help</h3>
+                <ul class="footer-links">
+                    <li><a href="#">shipping + delivery faqs</a></li>
+                    <li><a href="#">faq</a></li>
+                    <li><a href="#">store locator</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-heading">about</h3>
+                <ul class="footer-links">
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">impact foundation</a></li>
+                    <li><a href="#">transparency</a></li>
+                    <li><a href="#">give 20%, get 20%</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-heading">information</h3>
+                <ul class="footer-links">
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">terms and conditions</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">satisfaction guarantee</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="social-icons">
+            <a href="www.instagram.com/mightymoh13" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <div class="footer-logo">
+            <a href="index.html">cocokind</a>
+        </div>
+    </footer>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
